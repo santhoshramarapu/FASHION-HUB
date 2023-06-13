@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 
 /* navbar section starts */
@@ -73,6 +73,10 @@ body{
     color: #fff;
 }
 
+#menu-btn{
+    display: none;
+}
+
 .header .search-form{
     position: absolute;
     top: 110%; right: -110%;
@@ -122,7 +126,7 @@ img{ max-width: 100%; max-height: 100%;}
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width: 35rem;
+    width: 40rem;
     background: #ebeeeb;
 }
 
@@ -265,7 +269,7 @@ img{ max-width: 100%; max-height: 100%;}
 .btn-primary{
     border-radius: 9%;
     background: #ce3ca2;
-    width: 135px;
+    width: 145px;
 }
 .btn:hover{
     
@@ -285,16 +289,11 @@ p{
     text-align: center;
     padding-bottom: 0;
 }
-
-/* jumbotron sections ends */
-
-/* card section starts */
-
 .btn{
-    margin-top: 1rem;
+    margin-top: 0rem;
     display: inline-block;
     padding: .8rem 3rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     border-radius:  .7rem;
     border: .2rem solid var(--black);
     color: var(--black);
@@ -308,6 +307,9 @@ p{
     color: #140f0f;
 }
 
+/* jumbotron sections ends */
+
+/* card section starts */
 .features .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
@@ -327,7 +329,7 @@ p{
     text-align: center;
     box-shadow: var(--box-shadow);
     height:380px ;
-    width:320px ;
+    width:270px ;
     padding: 8rem 10;
 
 }
@@ -454,3 +456,60 @@ color:  rgb(240, 82, 9);
  }
 
  /* footer section ends  */
+
+
+@media screen and (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+.header{
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width: 90%;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
